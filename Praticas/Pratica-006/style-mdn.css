@@ -1,0 +1,194 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#mdn-header{
+    background-color:white;
+    width: 100%;
+    min-height:120px;
+    padding:36px 24px 0px 12px ;
+}
+#mdn-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+#header-logo{
+    display: flex;
+     flex-wrap: wrap;
+    
+      
+       
+   }
+#image-logo{
+        background-color: black;
+        color: blanchedalmond;
+        width: 50px;
+        height:50px;
+        border-radius:3px;
+}
+
+#content-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#content-logo > a{
+    background-color: black;
+    text-decoration: none;
+    color:white;
+    
+}
+#link-second-logo{
+    padding: 3px 1px 4px 1px ;
+    margin: 1px;
+
+}
+#link-third-logo{
+    padding: 2px 2px;
+    font-size: 13px;
+    margin:1px 1px 50% ;
+    width: 50%;
+}
+#menu-navegator{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+} 
+#menu-navegator > li{
+    margin:0px 60px 0px 50px;
+    padding: 12px;
+    list-style-type:"\25b6";
+    
+}
+button{
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    background-color: white;
+    
+}
+
+#button-one::before {
+ content: "technologies";
+ 
+ 
+}
+#button-two::before{
+    content:"References & Guides";
+
+}
+#button-three::before{
+    content:"FeedBack" ;
+}
+#box-search{
+ padding: 10px 30px 20px 0px ;
+}
+#button-one:hover{
+    list-style-type: "\1F53D";
+}
+#button-one > #ul-none-one{
+    display: none;
+}
+ #button-one:hover > #ul-none-one{
+    display:block;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    text-align: left;
+    padding: 5px 10px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
+    
+    
+}
+
+#button-two > #ul-none-two{
+    display:none;
+}
+#button-two:hover > #ul-none-two{
+    display: block;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    text-align: left;
+    padding: 5px 10px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
+}
+#button-three > #ul-none-three{
+    display:none;
+
+}
+#button-three:hover > #ul-none-three{
+    display:block;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    text-align: left;
+    padding: 5px 10px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
+}
+input{
+    border:2px solid black;
+    width: 300px;
+    height: 44px;
+    
+   
+}
+#iside-header{
+    background-color: rgba(204, 192, 231, 0.418);
+    width: 100%;
+    text-align: right;
+    height: 50px;
+    padding: 12px;
+    
+
+}
+#iside-header:hover  a{
+    text-decoration:none;
+
+}
+#iside-header-two{
+    background-color: rgba(178, 184, 241, 0.363);
+    width: 100%;
+    height:60px;
+    padding:14px;
+}
+#content-main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+#content-aside{
+ padding: 20px 30px 0px 10px;
+ min-width: 50px;
+ margin-right: 10%;
+ max-width: 200px;
+}
+main#content-p{
+    padding: 10px;
+    min-width: 280px;
+    max-width: 800px;
+    margin-right: 10%;
+}
+#content-main h1{
+    font-size: 1.5em;
+    margin: 16px 0px 16px 5px;
+    
+}
+#content-main p {
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}

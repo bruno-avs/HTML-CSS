@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mais algumas formatações</title>
+    <style>
+        body{
+            background-color:rgb(204, 122, 93);
+        }
+    </style>
+</head>
+<body>
+    <h1>O comando <code>Document.  getElementById("text")</code> é escrito em liguagen javascript.</h1>
+    <p>
+        <pre>
+        <code>
+            
+// Sample run-helloworld is a minimal Cloud Run service.
+package main
+
+import (
+        "fmt"
+        "log"
+        "net/http"
+        "os"
+)
+
+func main() {
+        log.Print("starting server...")
+        http.HandleFunc("/", handler)
+
+        // Determine port for HTTP service.
+        port := os.Getenv("PORT")
+        if port == "" {
+                port = "8080"
+                log.Printf("defaulting to port %s", port)
+        }
+
+        // Start HTTP server.
+        log.Printf("listening on port %s", port)
+        if err := http.ListenAndServe(":"+port, nil); err != nil {
+                log.Fatal(err)
+        }
+}
+
+func handler(w http.ResponseWriter, r *http.Request) {
+        name := os.Getenv("NAME")
+        if name == "" {
+                name = "World"
+        }
+        fmt.Fprintf(w, "Hello %s!\n", name)
+}
+        </code></pre>
+    </p>
+    <h2>Citações simples</h2>
+    <p>Como diria o cara sabio da esquina:<q>A vida só e boa pra que trabalha doido</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Maurycio Samy Silva:<blockquote cite="https://www.google.com.br/search?hl=pt-BR&sxsrf=ALeKk01MIR0Ahvj3N_fWP67bhX3ZMDb3SA:1625063729820&q=Maur%C3%ADcio+Samy+Silva&stick=H4sIAAAAAAAAAONgVuLRT9c3NDSusihMyy54xGjOLfDyxz1hKb1Ja05eY9Tg4grOyC93zSvJLKkUkuJig7IEpPi4UDTyLGIV8U0sLTq8NjkzXyE4MbdSITgzpywRALtxOXRhAAAA&sa=X&ved=2ahUKEwiGz9WSyr_xAhUdHbkGHYEuCr4QjKUDegQIBRAF">Maurício Samy Silva é graduado em Engenharia Civil pelo Instituto Militar de Engenharia (IME). É um obstinado divulgador dos Padrões Web e desenvolve o site do Maujor (maujor.com) e o Blog do Maujor (maujor.com/blog). Em 2011, lançou o site maujorsvg.com.br, destinado à divulgação da emergente tecnologia SVG. Maujor, como é conhecido na Internet, escreve para revistas de desenvolvimento web, é palestrante em eventos de TI e autor dos livros Construindo sites com CSS e (X)HTML, Criando sites com HTML, AJAX com jQuery, JavaScript, HTML5, CSS3, JQuery Mobile, JQuery UI e Fundamentos da SVG; todos publicados pela Novatec Editora.</blockquote> </p><!--Citação blockquote-->
+    <h2>Abreviações</h2>
+    <p><abbr title="HyperText Markap Laguage">HTML</abbr> <abbr title="Cascading style Sheets">CSS</abbr></p>
+</body>
+</html>

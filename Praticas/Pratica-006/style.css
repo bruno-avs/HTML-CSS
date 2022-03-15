@@ -1,0 +1,114 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+/* header*/
+#my-header{
+    width:100%;
+    min-height: 100px;
+    max-height: 200px;
+    background-color: rgb(149, 236, 236);
+    text-align: center;
+    border-bottom: 1px solid rgb(172, 204, 240);
+}
+h1{
+    padding:2%;
+    text-shadow: 5px 5px 5px rgba(7, 7, 59, 0.548);
+    
+}
+/*main-content*/
+#main-content{
+    background-image:URL('imagen-background-1366px-663px.jpg');
+    width: 100%;
+    min-height: 600px;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+
+}
+section{
+    margin: auto;
+    padding-top:100px;
+    min-width: 280px;
+    max-width: 1000px;
+    display: flex;
+    
+
+    justify-content: space-between;
+
+
+}
+.main-box{
+    background-color: rgb(93, 81, 31);
+    text-align: justify;
+    font-size: 14px;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 1%;
+    
+
+
+}
+#first-box{
+    width: 25%;
+    height: 20%;
+}
+#first-box:hover{
+    width: 30%;
+    height: 30%;
+}
+#second-box{
+    width: 10%;
+    height: 10%;
+}
+#third-box{
+    width: 25%;
+    height: 20%;
+}
+#fourth-box{
+    width: 25%;
+    height: 20%;
+}
+#fifth-box{
+    width: 25%;
+    height: 20%;
+}
+#sixth-box{
+    width: 25%;
+    height: 20%;
+}
+#m{
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+#m > div{
+    background-color: darkblue;
+    color: white;
+    width: 80%;
+    height: 50%;
+    padding: 10%;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+    transition: 0.3s;
+}
+#m > div:hover{
+    background-color: darkblue;
+    width: 85%;
+    height: 55%;
+    transition: 0.3s;
+}
+
+
+

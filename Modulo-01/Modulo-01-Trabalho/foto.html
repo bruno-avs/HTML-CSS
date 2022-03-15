@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+    <link rel="shortcut icon" href="Hopstarter-Square-Flags-Brazil-Flag.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+ div.foto{
+text-align: center;
+border-bottom: 5px solid rgb(28, 28, 70);
+}
+div.al{ 
+    text-align:right;
+    background-color: rgb(253, 183, 183);
+    color:rgb(255, 255, 255);
+    
+    
+   
+}
+div.co{
+    color:whitesmoke;
+    
+}
+
+
+
+    
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Web media Fotos</h1>
+    <div class="foto">
+        <picture><!--imagens dinamicas usando a imagen grande como padão-->
+<source media="(max-width:500px)" srcset="imagens/imagen-AP.png" type="image/png">       
+<source media="(max-width:750px)" srcset="imagens/imagen-p.png" type="image/png">
+<source media="(max-width:1050px)" srcset="imagens/imagen-m.png" type="image/png">
+<source media="(max-width:1200px)" srcset="imagens/imagen-AM.png" type="image/png">
+<img src="imagens/imagen-g.png" alt="foto g">
+        </picture>
+        <picture><!--imagens dinamicas usando a imagen pequena como padão-->
+            <source media="(min-width:1250px)" srcset="imagens/imagen-AG.png" type="image/png">
+            <source media="(min-width:1200px)" srcset="imagens/imagen-g.png" type="image/png">
+            <source media="(min-width:1050px)" srcset="imagens/imagen-m.png" type="image/png">
+            <source media="(min-width:750px)" srcset="imagens/imagen-AM.png" type="image/png">
+            <source media="(min-width:500px)" srcset="imagens/imagen-p.png" type="image/png">
+            <img src="imagens/imagen-AP.png" alt="foto am">
+        </picture>
+    </div>
+
+    <div class="co"> <p>baixar imagens.</p>
+        <ol>
+        <li>
+    <a href="imagens/imagen-g.png" target="_self" download="imagen-g.png" type="image/png" style="color:whitesmoke;text-decoration:none;">Imagen grande.</a>
+       </li>
+       <li>
+        <a href="imagens/imagen-m.png" target="_self" download="imagen-m.png" type="image/png" style="color:whitesmoke;text-decoration:none;">Imagen media.</a>  
+       </li>
+       <li>
+           <a href="imagens/imagen-p.png" target="_self" download="imagen-p.png" type="image/png"style="color:whitesmoke;text-decoration:none;">Imagen pequena.</a>
+       </li>
+        </ol>
+</div>
+
+    <div class="al"><a href="index.html" target="_self" rel="prev">Voutar pra pagina anterior.</a></div>
+    
+</body>
+</html>

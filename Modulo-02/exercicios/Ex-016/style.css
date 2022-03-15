@@ -1,0 +1,63 @@
+@charset "UTF-8";
+*{
+    
+}
+main{
+    background-color:whitesmoke;
+    width:1000px;/*define a largura da caixa*/
+    margin:auto;/*centraliza o conteudo automaticamente independente do tamanho da tela*/
+    padding:20px;/*cria uma borda envouta do conteudo*/ 
+    border-radius:15px;/*arredonda as bordas*/
+    box-shadow:5px 5px 15px #6b3c05bd;/*cria uma sombra na borda da box*/
+
+}
+
+
+body{
+    background-image:linear-gradient(75deg,#F8880C,#F03600);/*cria um degrade com 75 graus*/
+    background-attachment:fixed;/*deixa o fundo fixo*/
+
+   
+}
+p{
+    text-align:justify;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+h1{
+    color:#D91D0B ;
+    text-align:center;
+    box-shadow:5px 5px 5px #cecaca;
+    border-radius:10px;
+
+
+
+}
+h2{
+    color:#EB3E00;
+
+}
+a{
+     color:#F60C20;
+     text-decoration:none;
+}
+div#voutar{
+    width:45px;
+    background-color: #ebc1b2;
+    margin:inherit;
+    padding:3px;
+    border-radius: 10px;
+    box-shadow:2px 2px 5px #530a03a4
+    
+    
+}
+div#avançar{
+    width:57px;
+    background-color: #ebc1b2;
+    margin-left: 1100px;
+    margin-bottom: 100px;
+    padding:3px;
+    border-radius:10px;
+
+
+}

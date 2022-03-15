@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes</title>
+    <style>
+        main{
+            height:100px;
+            width:200px;
+            padding:10px;
+            text-align: center;
+            border-radius:40px;
+            border: 1px solid black;
+        }main > div{
+            display: none;
+        }
+
+        main:hover >div{
+            display: block;
+        }
+
+    main:hover{
+        background-color: red;
+    }
+    div{
+        background-color: seashell;
+    }
+    div > .a{
+        display: none;
+    }
+    div:hover > .a{
+        display: block;
+    }
+    #b{
+        background-color: sienna;
+        height:100px;
+        width:100px;
+        margin-top: 50px;
+        margin-left: 50px;
+        text-align:center;
+        padding: 10px;
+        border-radius:10px;
+        color:white;
+    }
+    #c{
+        background-color: thistle;
+        padding: 10px;
+    width:70px;
+    height:20px;
+    margin-left:5px;
+    border-radius: 40px;
+    margin-top: 10px;
+    }
+    #b:hover{
+        background-color: yellow;
+        color:black;
+    }
+    div#b > div#c{
+        display:none;
+    }
+    div#b:hover > div#c{
+        display: block;
+    }
+    a#d{
+        text-decoration: none;
+    }
+    div#m > div#e{
+        display: none;
+    }
+    div#m:hover > div#e {
+        display: inline-block;
+    }
+    #m{
+        background-color:rgb(5, 184, 238);
+        font: italic 900 1.5em 'arial', heuvetica, sans-serif;
+        width:250px;
+        height:250px;
+        text-align:center;
+        margin-top:10px;
+        margin-left:20px;
+        padding:10px;
+        border: 1px solid black;
+        border-radius:60px;
+
+    }
+    div#m:hover{
+        background-color: rosybrown;
+    }
+    #e{
+        padding: 10px;
+        width:200px;
+        height:100px;
+        margin-top: 20px;
+        margin-left: 1px;
+        border-radius: 5px;
+        color:rgb(18, 7, 90);
+        box-shadow:5px 5px 5px;
+        text-decoration: underline;
+        
+
+    }
+   
+    
+     
+    </style>
+</head>
+<body>
+<main>
+ passe o mouse aqui
+    <div> 
+     click aqui para acessar o site
+     <div id="a"><a href="#">Site</a></div>
+    </div>
+    
+</main>
+<div id="b">assunto
+    <div id="c"><a href="#" id="d">Link</a></div>
+
+  
+
+</div>  
+    <div id="m">
+        assunto confidencial
+        <div id="e"> eu sou nerd</div>
+
+
+    </div>
+    <div id="S"> 
+        parece piada
+    </div>
+</body>
+</html>

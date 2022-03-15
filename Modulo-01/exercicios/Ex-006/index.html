@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Formatação de texto</title>
+        <style>
+            body{
+                background-color:aquamarine;
+            }
+            mark#marcação{
+                background-color:brown;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <H1>Primeiras Formatações
+            <hr>
+        </H1>
+        <h2>Negrito/Destaque</h2>
+        <p>Nesta frase temos uma <b>palavra em negrito</b> escrita com a tag &lt; b &gt; que não possui um significado (não semantica).</p>
+        <p>Nesta outra frase temos uma <strong>palavra em destaque</strong> escrita com a tag &lt; strong &gt; esta tag possi um significado (semantica). </p>
+        <h2>Italico/Ênfase</h2>
+        <p>Nesta frase aqui temos uma <i>palavra em Italico</i> esta tag não é semantica.</p>
+        <p>Nesta frase temos uma <em>palavra em Ênfase</em> usando uma tag semantica.&lt; em &gt; </p>
+        <h1>Formatações adicionais</h1>
+        <h2>Texto marcado &lt;mark&gt;.</h2>
+            <p><mark>Texto marcado </mark> original.<br>
+            <mark style="background-color:blueviolet;">Texto marcado</mark> cor auterada usando CSS na propria tag.<br>
+            <mark id='marcação'>Texto marcado</mark> usando um seletor CSS. </p>
+            <h2>Texto grande e pequeno.</h2>
+        <p>Aqui temos um<big> texto grande</big> (esta tag <strong>&lt; big &gt;</strong> não é mais semantica) e um <small>texto pequeno</small> (a tag <strong>&lt; small &gt;</strong> ainda é uma tag semantica.</p>
+        <h2>Texto <em>deletado</em> e <em>inserido</em></h2>
+        <p><del>texto deletado</del><br>
+        <ins>Texto inserido</ins><br>
+    Esiste tambem o <u>sublinhado</u> com a tag &lt; u &gt; que não é sematica.</p>
+    <h2>Texto <em> sobescrito</em> e <em>subescrito</em></h2>
+    <p>Para encrever coisas do tipo 3<sup>20</sup> + 8. <br>
+    E para escrever coisas do tipo H<sub>2</sub>O</p>
+
+        
+    </body>
+</html>

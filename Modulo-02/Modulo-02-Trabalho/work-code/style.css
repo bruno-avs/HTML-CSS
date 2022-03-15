@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@font-face{
+    font-family:'principal';
+    src: url('fonts/Cocogoose\ Pro\ Semilight-trial.ttf') format('truetype');
+}@font-face{
+    font-family:'subtitulo';
+    src: url('fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+} 
+*{
+    margin: 0px;
+}
+:root{
+    
+    --cor0:#169CF8;
+    --cor1:#1455D9;
+    --cor3:#222FF0;
+    --cor4:#3C14D9;
+    --cor5:#8216F8;
+
+    --font0:'IBM Plex Serif', serif;
+}
+ol:scope{
+background-color: #222FF0;
+}
+img{
+    width: 100%;}
+body{
+    background-color:white;
+}
+nav{
+    position: fixed;
+    display: block;
+    width: 1366px;
+    height:50px;
+    padding: 10px;
+    background-color:var(--cor3);
+    margin-top: -70px;
+    
+   
+    box-shadow:2px 2px 7px rgba(9, 2, 68, 0.281);
+   
+
+}
+header{
+    background-image:url('imagens/pexels-lukas-1366 x 450.jpg');
+    margin-top: 30px;
+    min-height:450px;
+    box-shadow: 5px 5px 3px rgba(99, 113, 122, 0.294);
+   
+}
+h1.p{
+    color:white;
+    min-width:300px;
+    max-width:640px;
+    padding:50px 30px 0px 20px;
+    margin-top:70px;
+    margin-left: 25px;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    font-family:'principal';
+    font-weight:normal;
+    font-size: 2.5em;
+    text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.644);
+    
+}
+
+
+main{
+    position: relative;
+    min-width: 300px;
+    max-width:800px;
+    background-color:white;
+    margin-left:50px;
+    padding:20px;
+    border-width: 0px 1px 1px 1px;
+    border-style:double;
+    border-color: var(--cor4);
+
+   
+    
+    box-shadow:0px 2px 3px rgba(2, 26, 90, 0.513);
+}
+main h1{
+    color:var(--cor5);
+    margin:1.5em 0px 0px 0px;
+    font-size:2.2em;
+    font-family:'principal';
+
+    
+
+}
+hr{
+    margin-bottom: 3em;
+}
+h2.subtitulos{
+    color:var(--cor4);
+    margin:16px 0px 16px 10px ;
+    font-size:2.2em;
+    font-family:'subtitulo';
+
+}
+main p{
+    text-align:justify;
+    font-family:'helvetica' arial, verdana, sans-serif;
+    font-weight: normal;
+    font-size:1.2em;
+    line-height: 1.5em;
+
+}
+aside{
+    min-width: 100px;
+    max-width: 350px;
+    height:600px;
+    background-color: white;
+    margin-top:-650px;
+    margin-left: 890px;
+    padding: 10px;
+    box-shadow: 30px 29px 0px 5px var(--cor4);
+    border:2px double #1455D9;
+}
+
+

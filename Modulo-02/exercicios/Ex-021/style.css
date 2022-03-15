@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(225, 208, 236);
+}
+::selection{
+    background-color: blue;
+    color:brown;
+}
+h1{
+    text-align: center;
+    text-decoration:underline;
+}
+#topico{
+    background-color: rgb(196, 151, 228);
+    width:50px;
+    height:50px;
+    margin-right: 1300px;
+    display: flex;
+    box-shadow: -5px -5px 10px;
+  
+}
+#topico:hover{
+    background-color: lawngreen;
+}
+#topico:active{
+    background-color: lightblue;
+}
+div#topico > p#escondido{
+    display: none;
+}
+div#topico:hover > p#escondido{
+    display: block;
+}
+p#escondido{
+    
+    background-color: rgb(93, 96, 116);
+    width: 200px;
+    height:600px;
+    padding: 5px;
+    border-radius:10px;
+}
+main{
+    
+    background-image: linear-gradient(to bottom, rgb(171, 171, 245), blue);
+    width:1100px;
+    height:1000px;
+    margin:auto;
+    padding: 10px;
+    border-radius: 20px;
+    border-width:2px;
+    border-style:dotted;
+    border-color:rgb(34, 25, 41);
+    box-shadow: 50px 50px  rgb(171, 171, 245);
+
+}
+div{
+    background-color: aqua;
+    font:normal 400 1em 'verdana', arial, sans-serif;
+    padding:10px;
+    border-style: ridge;
+    border-width:2px;
+    border-color: blue; 
+    border-radius: 10px;
+    margin:auto;
+    width:1000px;
+    height:60px;
+    margin-top:50px;
+    text-align: justify;
+   
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos</title>
+    <style>
+        h1::after{
+            content:"  texto add";
+            text-decoration:underline;
+            color:red;
+
+        }
+        h1::before{
+            content:'texto add ';
+            text-decoration:underline;
+            color:red;
+        }
+        p:first-letter{
+            color:rgb(255, 255, 0);
+            font-size:2em;
+            background-color: black;
+            padding:2px;
+            box-shadow: 1px 1px 1px rgb(133, 125, 125);
+        }
+        p:first-line{
+            color:rgb(231, 14, 14);
+            text-decoration: underline;
+        }
+        
+        p{
+            text-indent:30px;
+            text-align: justify;
+        }
+        ::marker{
+            color:green;
+            font-size: 17px;
+        }
+        a:link{
+            font:italic normal 17px 'arial',helvetica, sans-serif;
+    
+        }
+        a:visited{
+            color:indianred;
+
+        }
+        a:active{
+            color:black
+        }
+       div > ul{
+           display:none;
+       }
+       div:hover > ul{
+           display:block;
+          
+           
+           background-color: black;
+           width:150px;}
+           h2{
+            border-style:;
+            border-color: lightcoral;
+           }
+           
+
+    </style>
+</head>
+<body>
+    <h1>title of my exemple</h1>
+      </div><ol id="a"><div>
+      
+        <li><a href="#" target="_blank" rel="external" title="link 01">Link texte 01</a></li>
+        <ul>
+            <li><a href="#" target="_blank" rel="external" title="sublink do link 01">sublink teste</a></li>
+        </ul>
+        <li><a href="#" target="_blank" rel="external" title="teste 02">Link teste 02</a></li>
+        <ul>
+            <li><a href="#" target="_blank" rel="external">subtitulo do link 2</a></li>
+        </ul></div>
+    </ol>
+    <h2>Sub titulo</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quam eveniet, tempora ducimus aliquid ex distinctio nihil, nobis veniam amet iure et cum. Animi delectus sequi natus provident dolores cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quidem, voluptates laudantium fugit, numquam voluptas aperiam exercitationem aliquam molestias expedita distinctio consequatur illum reprehenderit fugiat id voluptatibus repudiandae ut. Voluptatem.</p>
+    <h2>Outro subtitle</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vel fugiat ea voluptatibus veritatis delectus impedit, ullam suscipit magni debitis perferendis atque aliquam dolor nemo doloremque? Ipsam voluptas nobis eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quae possimus consectetur sit deleniti sequi aliquam nemo, nobis nostrum quis, ab repudiandae a corrupti, consequuntur ipsa placeat quia alias reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora et nulla earum expedita architecto aliquid animi suscipit voluptatibus, ipsum ea velit voluptas neque possimus molestiae placeat ut iusto? Aliquid, repudiandae.  </p>
+
+</body>
+</html>

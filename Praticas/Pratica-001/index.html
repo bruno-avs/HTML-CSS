@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><!--Icone de favorito-->
+        <title>Praticando as tags</title>
+        <style>body{
+            background-color:rgb(193, 155, 228);
+        }
+        mark#marcação{
+            background-color: rgb(47, 182, 182);
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <h1><em>Quarta-feira</em> 30/06/2021 </h1>
+        <hr>
+        <h2>Adicionado simbolos e emojis</h2>
+        <p>Simbolos: &euro;, &copf;, &real;, &dollar;, &Coproduct;, &dagger;</p>
+        <p>Emojis: &#x1f574, &#x1f3b7, &#x1f3b6</p>
+        <h2>Adicionando imagens</h2>
+        <p>Para adicionar imagens use a tag <strong>&lt;img src="nome do arquivo" alt="texto alternativo &gt</strong>, o serto é que as imagens não passe de 1500px de largura.</p>
+        <p>Imagen jpeg na mesma pasta do arquivo index:<br> <img src="images.jpg" alt="Logo do html 5"></p>
+        <p>Imagen jpeg de uma subpasta no arquivo index:<br><img src="background/Paisagen_1500.jpg" alt="paisagem rua que some no horizonte"></p>
+        <p>Imagen de um site externo:<br><img src="https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg" alt="foto de uma flor amarela"></p>
+        <h2>Negrito/Destaque.</h2>
+<p>Em <b>Negrito</b> usando uma tag não semantica e em <strong>Destaque</strong> usando uma tag semantica</p>
+<h2>Italico/Ênfase</h2>
+<p>Em <i>Italico</i> usando uma tag não semantica e em <em>Ênfase</em> usando uma tag semantica</p>
+<h2>Marcacões</h2>
+<p><mark>Marcação</mark> usando a tag &lt; mark &gt; na cor original.<br>
+<mark style="background-color:rgb(251, 143, 66);">Marcação</mark> com a cor alterada na propria tag de maneira isolada usando <abbr title="Cascading Style Sheets">CSS </abbr>.<br>
+<mark id="marcação">Marcação</mark> com a cor alterada na parte <abbr title="cabeça">HEAD</abbr> na tag &lt; style &gt; usando CSS. </p>
+<h2>Letra grande e pequenas</h2>
+<p>Letra <big>grande</big> usando uma tag não semantica, letra <small>pequena</small> usando uma tag semantica.</p>
+<h2>Texto inserido e deletado</h2>
+<p>Texto <ins>Inserido</ins> texto <del>Deletado</del>.</p>
+<p>Texto <u>grifado</u> usando uma tag qua não é mais semantica</p>
+<h2>Texto subescrito e texto subiscrito</h2>
+<p>Texto sobescrito 30<sup>20</sup> + 2.</p>
+<p>Texto subiscrito H<sub>2</sub>O.</p>
+<h2>Adicionado codicos Pré-formatados e mono-espaçados</h2>
+<p>Codico mono-espaçado <code>Document.getElementById(text)</code>.</p>
+<p>Codicos Pré-formatados.
+    <pre>
+        <code>
+            module github.com/GoogleCloudPlatform/golang-samples/run/helloworld
+
+go 1.13
+        </code>
+    </pre>
+</p>
+<h2>Adicionando uma citação simples e completa.</h2>
+<p>Como dizia um pai de um amigo meu:<q>O computador é um burro que faz contas simples muito rapidamente</q></p>
+<p>Segundo uma reportagem do site GloboEsport.com: <blockquote cite="https://ge.globo.com/futebol/times/palmeiras/noticia/palmeiras-ira-a-fifa-tentar-inscrever-dudu-borja-e-pedrao-antes-de-reabertura-da-janela.ghtml">Jogadores que chegam do exterior podem ser registrados apenas a partir de 1º de agosto, mas clube tentará a antecipação, ainda que considere improvável pela falta de precedentes</blockquote></p>
+<h2>Abreviações</h2>
+<p>Essas são as linguagens usadas em sites <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="Java Scripty">JS</abbr>.</p>
+<h2>Tag para adicionar um endereço.</h2>
+<p><address>Rua da margaridas, 098, bairo alvorada.</address></p>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Imagens que se adaptam</title>
+        <style>
+            body{
+                background-color:rgb(169, 255, 169);
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Imagens que se adaptam sosinhas.</h1>
+        <p>Diferentes tamanhos de imagens são carregados dependendo do tamanho da tela do seu dispositivo.</p>
+        <picture><!--usando a imagen maior como padrão-->
+             <source media="(max-width:750px)" srcset="imagens/imagen-p.png" type="image/png">
+             <source media="(max-width:1050px)" srcset="imagens/imagen-m.png" type="image/png">
+            <img src="imagens/imagen-g.png" alt="imagen grande">
+        </picture>
+            <picture><!--usando uma imagen menor como padrão-->
+                <source media="(min-width:1050px)" srcset="imagens/imagen-g.png" type="image/png">
+                <source media="(min-width:750px)" srcset="imagens/imagen-m.png" type="image/png">
+                <img src="imagens/imagen-p.png" alt="imagen pequena">
+            </picture>
+
+            <h1>Adicionando audios.</h1>
+            <audio preload="metadata"  controls loop >
+                <source src="audios/Teto - M4 feat. Matuê_160k.mp3" type="audio/mpeg">
+                <source src="audios/Teto - M4 feat. Matuê_160k.wav" type="audio/wav">
+                <p>Poxa infelizmente seu navegador não reproduz esse tipo de audio, se quiser fazer o download clique <a href="audios/Teto - M4 feat. Matuê_160k.mp3" download="teto - M4 feat. Matuê_160k.mp3" type="audio/mpeg"> aqui</a></p>
+               
+            </audio>
+
+ <h1>Adicionando videos.</h1>
+        <video width="600px" height="200px" poster="imagens/imagen-g.png" controls altoplay>
+            <source src="videos/meu-video.mp4" type="video/mp4">
+            <source src="videos/meu-video.webm" type="video/webm">
+        </video>
+    </body>
+</html>
