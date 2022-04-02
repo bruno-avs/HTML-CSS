@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+}
+
+.header {
+  width: 50%;
+  margin: auto;
+}
+
+.header__title {
+  text-align: center;
+  padding: 10px;
+}
+
+.main {
+  width: 100vw;
+  height: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__box {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: rgb(40, 212, 212);
+  margin-top: 10px;
+}
+
+.main__translate {
+  transform: translate(12px, -10px);
+  /* transform: translate3d(12px, 12px, 12px); */
+  /*transform: translateX(10px);
+   transform: translateZ(10px);
+   transform: translateY(20px); */
+}
+.main__scale{
+  /* transform:scale(1.1); */
+  transform:scale(1.2,1.1);
+  /* transform:scale3d(2, 2, 1) */
+  /* transform:scaleX(2); */
+  /* transform:scaleY(1.5); */
+  /* transform: scaleZ(2); */
+}
+.main__rotate{
+  /* transform:rotate(5deg); */
+  transform:rotate3d(10px, 10px, 10px, 90deg);
+  /* transform:rotateX(12deg);
+  transform:rotateY(12deg);
+  transform:rotateZ(12deg); */
+}
+.main__skew{
+  transform:skew(12deg,10deg);
+}
+.main__pespective{
+ transform: perspective(12);
+}
