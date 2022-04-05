@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Bowlby+One+SC&display=swap');
+:root{
+    --title:'Bowlby One SC';
+    --content:'Beau Rivage';
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+header{
+    font-size: 2.5rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+a:hover{
+    text-decoration: underline;
+}
+.c-header__title{
+    font-family: var(--title), cursive, serif;  
+    letter-spacing: 0.2rem;
+    
+}
+.c-header__creditos{
+
+}
+section{
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15vh 0px;
+    
+  
+}
+.u-normal-section{
+    
+}
+.u-images-background{
+    margin: 2rem 0px;
+    color: white;
+    width: 40rem;
+    background-color: rgba(0, 0, 0, 0.31);
+    
+}
+.u-images-background p {
+    text-shadow: 1px 1px 5px black;
+}
+.c-estrofes{  
+    display: block;
+    font-size: 4rem;
+    font-family: var(--content), sans-serif;
+    margin:2rem;
+    padding: 3rem;
+    line-height: 5rem;
+}
+.c-main__estrofe-two{
+    background: rgb(239, 239, 153) url(image/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    box-shadow:inset 0px 0px 20px black;
+}
+.c-main__estrofe-for{
+  background:rgb(159, 159, 159) url(./image/background002.jpg) center no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  box-shadow:inset 0px 0px 20px black;
+}
+.c-main__estrofe-for p{
+    background-color: rgba(240, 248, 255, 0.218);
+    color: black;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+@media screen and (max-width:375px){
+ html{
+     font-size: 45%;
+ }
+.c-header__title{
+    font-size: 3rem;
+}
+ section{
+     align-items: center;
+ }
+}
+@media screen and (max-width:420px){
+    .u-images-background{
+        width: 30rem;
+    }
+    section{
+        align-items: center;
+    }
+}
+@media screen and (max-width:500px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:700px){
+    html{
+        font-size: 60%;
+    }
+    header{
+        font-size: 2rem;
+    }
+}
