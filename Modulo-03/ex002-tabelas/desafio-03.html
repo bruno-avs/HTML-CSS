@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio tabela completa</title>
+    <style>
+        main{
+            position: absolute;
+            left: 0;
+            right:0;
+            bottom:0;
+            top:100px;
+            margin: auto auto;
+            max-width: 800px;
+            
+        }
+        table{
+          width:700px;
+          border: 1px solid black;
+          border-collapse:collapse;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.566);
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px 10px 5px 5px;
+        }
+        .sexo{
+            padding-top:10px ;
+        }
+        caption{
+            background-color: rgb(181, 181, 181);
+            padding: 20px;
+            font-size: 1.5rem;
+            border: 1px solid black;
+            border-bottom: none;
+
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption>Filmes favoritos entre homes e mulheres</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupos</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="sexo" rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Sousa</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Obilivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th class="sexo" rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Bruno Mandonça</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars 5</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

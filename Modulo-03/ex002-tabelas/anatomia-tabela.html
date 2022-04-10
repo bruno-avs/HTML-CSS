@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia de uma tabela</title>
+    <style>
+        main{
+            min-width: 300px;
+            max-width:800px;
+            margin: auto;
+            padding: 5%;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        table{
+            width:60%;
+            border: 1px solid black;
+            border-collapse:collapse;
+        }
+        th, td, tfoot{
+            height:20px;
+            border:1px solid black;
+            padding: 10px;
+
+        }
+        th{
+            background-color: gray;
+            color: white;
+        }
+        .position{
+            width:5%;
+            text-align: center;
+        }
+        .state{
+            text-align: left;
+        }
+        .population{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Lista de estados mais populosos do Brasil</h1>
+       <table>
+           
+                <thead>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                </thead>
+                <tbody>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">1</td>
+                        <td class="table-celulas state">São Paulo</td>
+                        <td class="table-celulas population">46 649 132</td>
+                    </tr>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">2</td>
+                        <td class="table-celulas state">Minas Gerais</td>
+                        <td class="table-celulas population">21 411 923</td>
+                    </tr>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">3</td>
+                        <td class="table-celulas state">Rio de Janeiro</td>
+                        <td class="table-celulas population">17 463 349</td>
+                    </tr>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">4</td>
+                        <td class="table-celulas state">Bahia</td>
+                        <td class="table-celulas population">14 985 284</td>
+                    </tr>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">5</td>
+                        <td class="table-celulas state">Paraná</td>
+                        <td class="table-celulas population">11 597 484</td>
+                    </tr>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">6</td>
+                        <td class="table-celulas state">Rio Grade Do Sul</td>
+                        <td class="table-celulas population">11 466 630</td>
+                    </tr>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">7</td>
+                        <td class="table-celulas state">Pernambuco</td>
+                        <td class="table-celulas population">9 674 793</td>
+                    </tr>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">8</td>
+                        <td class="table-celulas state">Ceará</td>
+                        <td class="table-celulas population">9 240 580	</td>
+                    </tr>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">9</td>
+                        <td class="table-celulas state">Pará</td>
+                        <td class="table-celulas population">8 777 124</td>
+                    </tr>
+                    <tr class="table-lines">
+                        <td class="table-celulas position">10</td>
+                        <td class="table-celulas state">Santa Catarina</td>
+                        <td class="table-celulas population">7 338 473</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                       <td>
+                           rodapé
+                       </td>
+                    </tr>
+                </tfoot>
+       </table>
+    </main>
+
+</body>
+
+</html>
